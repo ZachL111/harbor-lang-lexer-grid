@@ -1,0 +1,17 @@
+{
+  "repo": "harbor-lang-lexer-grid",
+  "thresholds": {
+    "signal": 2,
+    "slack": 1,
+    "confidence": 2,
+    "drag": 2,
+    "ship": 177,
+    "watch": 123
+  },
+  "terms": [
+    "IR pressure",
+    "lowering drift",
+    "stack depth",
+    "diagnostic reach"
+  ]
+}
