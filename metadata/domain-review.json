@@ -1,0 +1,73 @@
+{
+  "repo": "harbor-lang-lexer-grid",
+  "language": "Julia",
+  "category": "Compilers",
+  "goal": "Create a Julia reference implementation for lexer workflows, centered on stream reduction, windowed input fixtures, and late-data behavior checks.",
+  "review_model": {
+    "terms": [
+      "IR pressure",
+      "lowering drift",
+      "stack depth",
+      "diagnostic reach"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "IR pressure",
+      "signal": 63,
+      "slack": 46,
+      "drag": 16,
+      "confidence": 63,
+      "score": 187,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "lowering drift",
+      "signal": 56,
+      "slack": 54,
+      "drag": 20,
+      "confidence": 74,
+      "score": 180,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "stack depth",
+      "signal": 83,
+      "slack": 28,
+      "drag": 15,
+      "confidence": 52,
+      "score": 201,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "diagnostic reach",
+      "signal": 84,
+      "slack": 46,
+      "drag": 9,
+      "confidence": 59,
+      "score": 246,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "IR pressure",
+      "signal": 56,
+      "slack": 43,
+      "drag": 32,
+      "confidence": 48,
+      "score": 107,
+      "lane": "watch"
+    }
+  ]
+}
