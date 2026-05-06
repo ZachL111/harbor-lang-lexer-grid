@@ -1,0 +1,32 @@
+{
+  "index": 354,
+  "phase": 2,
+  "batch": 40,
+  "name": "harbor-lang-lexer-grid",
+  "planned_name": "harbor-lang-lexer-grid",
+  "language": "Julia",
+  "category": "Compilers",
+  "goal": "Create a Julia reference implementation for lexer workflows, centered on stream reduction, windowed input fixtures, and late-data behavior checks.",
+  "repository_url": "https://github.com/ZachL111/harbor-lang-lexer-grid",
+  "verification_command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify.ps1",
+  "model": {
+    "inputs": [
+      "demand",
+      "capacity",
+      "latency",
+      "risk",
+      "weight"
+    ],
+    "threshold": 160,
+    "risk_penalty": 5,
+    "latency_penalty": 3,
+    "weight_bonus": 2,
+    "decision_rule": "accept when score is greater than or equal to threshold, otherwise review"
+  },
+  "quality_gates": [
+    "readme constraint scan",
+    "fixture presence check",
+    "metadata JSON parse",
+    "language verifier"
+  ]
+}
